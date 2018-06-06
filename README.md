@@ -32,7 +32,8 @@ If you find this code useful, please consider citing:
 6. [Training](#training)
 7. [Testing](#testing)
 8. [Pretrained model](#pretrained-model)
-9. [Contact](#contact)
+9. [Extract recipe features](#extract-recipe-features)
+10. [Contact](#contact)
 
 ## Installation
 
@@ -133,6 +134,13 @@ You can test it with:
 python test.py --model_path=snapshots/model_e220_v-4.700.pth.tar
 ```
 
+## Extract recipe features
+
+For those who want to exact recipe features, prepare paired recipe-image and run with:
+```
+python getEmbedding_v1.py
+```
+Features will be saved in ```npy``` file.
 ## Contact
 
 For any questions or suggestions you can use the issues section or reach us at jmarin@csail.mit.edu or amaia.salvador@upc.edu.
